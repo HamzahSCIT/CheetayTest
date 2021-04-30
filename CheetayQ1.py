@@ -43,28 +43,7 @@ def mergeSort(end, start):
 
 def activitySelection(start, end, n): 
     temp = 0
-
-    if n < 1:
-        return 0
-    
-    end, start = mergeSort(end, start)
-        
-    # for i in range(1,n):
-    #     for j in range(0,n-1):
-    #         if(end[j] > end[j+1]):
-    #             temp = start[j]
-    #             start[j] = start[j+1]
-    #             start[j+1] = temp
-        
-    #             temp = end[j]
-    #             end[j] = end[j+1]
-    #             end[j+1] = temp
-    
-    print(start)
-    print(end)
-                
-    print("\nMaximum Selected Activities")
-    temp = 0
+    end, start = mergeSort(end, start)                
     print(start[temp], end[temp]), 
     count = 1
     
